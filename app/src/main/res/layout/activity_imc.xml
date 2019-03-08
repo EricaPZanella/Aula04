@@ -2,39 +2,45 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".IMC">
 
 
-    <Button
-        android:id="@+id/button1"
-        android:text="Botão 1"
+    <TextView
+        android:text="Nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editTextNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
-    <LinearLayout
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:text="E-mail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        android:orientation="horizontal">
+        android:layout_height="wrap_content" />
 
-        <Button
-            android:id="@+id/button2"
-            android:text="Botão 2"
-            android:layout_width="182dp"
-            android:layout_height="wrap_content"
-            />
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress" />
 
-        <Button
-            android:id="@+id/button3"
-            android:text="Botão 3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
+    <TextView
+        android:text="Comentário"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-    </LinearLayout>
-
+    <EditText
+        android:id="@+id/editTextObs"
+        android:layout_width="376dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="textMultiLine" />
 
 
 </LinearLayout>
